@@ -3,6 +3,8 @@
 
 USE alx_book_store;
 
+DESCRIBE Books;
+
 SELECT
 	TABLE_NAME,
 	COLUMN_NAME,
