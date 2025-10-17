@@ -1,8 +1,6 @@
 -- This script prints the full description of a table from the database
 -- without using the DESCRIBE or EXPLAIN keywords
 
-USE alx_book_store;
-
 SELECT
 	TABLE_NAME,
 	COLUMN_NAME,
