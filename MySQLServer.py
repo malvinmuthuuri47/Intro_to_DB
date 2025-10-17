@@ -21,14 +21,7 @@ try:
         create_db_query = """
             CREATE DATABASE IF NOT EXISTS alx_book_store
         """
-
-        # with open("alx_book_store.sql", "r") as file:
-            # sql_script = file.read()
-
         with connection.cursor() as cursor:
-            # for statement in sql_script.split(";"):
-                # ln = statement.strip()
-                # if ln:
             cursor.execute(create_db_query)
             connection.commit()
 
