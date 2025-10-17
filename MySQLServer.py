@@ -10,7 +10,6 @@ config = {
         "host": os.getenv("DB_HOST"),
         "user": os.getenv("DB_USER"),
         "password": os.getenv("DB_PASSWORD"),
-        "database": os.getenv("database"),
         "port": os.getenv("DB_PORT")
         }
 
@@ -19,14 +18,18 @@ try:
     with mysql.connector.connect(**config) as connection:
         print("Connected to MySQL server!")
 
-        with open("alx_book_store.sql", "r") as file:
-            sql_script = file.read()
+        create_db_query = """
+            CREATE DATABASE IF NOT EXISTS alx_book_store
+        """
+
+        # with open("alx_book_store.sql", "r") as file:
+            # sql_script = file.read()
 
         with connection.cursor() as cursor:
-            for statement in sql_script.split(";"):
-                ln = statement.strip()
-                if ln:
-                    cursor.execute(ln)
+            # for statement in sql_script.split(";"):
+                # ln = statement.strip()
+                # if ln:
+            cursor.execute(create_db_query)
             connection.commit()
 
         print("Database 'alx_book_store' created successfully!")
