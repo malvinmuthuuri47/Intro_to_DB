@@ -1,6 +1,6 @@
 """This python script creates a database in the MySQL server"""
 
-from mysql.connector import connect, Error
+import mysql.connector
 from dotenv import load_dotenv
 import os
 
@@ -16,7 +16,7 @@ config = {
 
 try:
     # Connect to the server first
-    with connect(**config) as connection:
+    with mysql.connector.connect(**config) as connection:
         print("Connected to MySQL server!")
 
         with open("alx_book_store.sql", "r") as file:
@@ -30,5 +30,5 @@ try:
             connection.commit()
 
         print("Database 'alx_book_store' created successfully!")
-except Error as e:
+except mysql.connector.Error as e:
     print("An error occurred: ", e)

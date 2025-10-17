@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Customers (
         address TEXT
         );
 
-CREATE TABLE IF NOT EXISTS ORDERS (
+CREATE TABLE IF NOT EXISTS Orders (
         order_id INT PRIMARY KEY,
         customer_id INT,
         order_date DATE,
