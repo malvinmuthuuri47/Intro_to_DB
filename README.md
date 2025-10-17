@@ -20,3 +20,7 @@ The journey begins with understanding what a database is, the different types of
 > [!Note]
 > Task One
 > - This task creates a SQL script that defines a database schema and the tables together with their relationships.
+> Task Two
+> - This task creates a database using Python's MySQL Connector in a Python script
+> Task Three
+> - This task requires you to create tables referenced in task one in the alx_book_store database
