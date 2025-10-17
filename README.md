@@ -19,8 +19,16 @@ The journey begins with understanding what a database is, the different types of
 
 > [!NOTE]
 > **Task One**
-> - This task creates a SQL script that defines a database schema and the tables together with their relationships.
+> -  This task creates a SQL script that defines a database schema and the tables together with their relationships.
 > **Task Two**
-> - This task creates a database using Python's MySQL Connector in a Python script
+> -  This task creates a database using Python's MySQL Connector in a Python script
 > **Task Three**
-> - This task requires you to create tables referenced in task one in the alx_book_store database
+> -  This task requires you to create tables referenced in task one in the alx_book_store database
+> **Task FOUR**
+> -  This task requires you to write a script that lists all the tables in the alx_book_store database
+> **Task Five**
+> -  This task requires you to print the full description of the table books from the database alx_book_store
+> **Task Six**
+> -  This task requires you to populate the cutomer table with a single row of data in the alx_book_store database
+> **Task Seven**
+> -  This task requires you to write a script the populates the customer table in the alx_book_store with multiple rows
